@@ -5,6 +5,12 @@
   --foreground: #171717;
 }
 
+ul {
+  & li {
+    padding-left: 8px;
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
