@@ -7,6 +7,9 @@ export default function Home() {
       <Link href="/basic/fetchdata/">
         <h3>Fech Data</h3>
       </Link>
+      <Link href="/basic/caching/">
+        <h3>Fech Data</h3>
+      </Link>
     </div>
   );
 }
