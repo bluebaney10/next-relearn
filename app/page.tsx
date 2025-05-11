@@ -39,6 +39,16 @@ export default function Home() {
             <h3>Accessing Query String Parameter</h3>
           </Link>
         </li>
+        <li>
+          <Link href="/basic/sorttable/">
+            <h3>Sort Table</h3>
+          </Link>
+        </li>
+        <li>
+          <Link href="/basic/router/">
+            <h3>Router</h3>
+          </Link>
+        </li>
       </ul>
     </div>
   );
