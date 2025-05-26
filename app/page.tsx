@@ -60,7 +60,12 @@ export default function Home() {
       <ul>
         <li>
           <Link href="/apis/getcollectionobject/">
-            <h3>Get Collection of Objects</h3>
+            <h3>Get Collection Objects</h3>
+          </Link>
+        </li>
+        <li>
+          <Link href="/apis/getsingleobject/1">
+            <h3>Get Single Objects</h3>
           </Link>
         </li>
       </ul>
