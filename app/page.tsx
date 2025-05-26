@@ -55,6 +55,15 @@ export default function Home() {
           </Link>
         </li>
       </ul>
+
+      <h2>Building API</h2>
+      <ul>
+        <li>
+          <Link href="/apis/getcollectionobject/">
+            <h3>Get Collection of Objects</h3>
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 }
