@@ -1,47 +1,25 @@
+import React, { Suspense } from "react";
+import UserTable from "./UserTable";
 import Link from "next/link";
-import React from "react";
-import { sort } from "fast-sort";
-
-interface User {
-  id: number;
-  name: string;
-  email: string;
-}
 
 interface Props {
   searchParams: { sortOrder: string };
 }
 
-const UserTable = async ({ searchParams: { sortOrder } }: Props) => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users");
-  const users: User[] = await res.json();
+const UsersPage = async ({ searchParams: { sortOrder } }: Props) => {
   console.log(sortOrder);
-  const sortedUser = sort(users).asc(
-    sortOrder === "email" ? (user) => user.email : (user) => user.name
-  );
 
   return (
-    <table className="table table-bordered">
-      <thead>
-        <tr>
-          <th>
-            <Link href="?sortOrder=name">Name</Link>
-          </th>
-          <th>
-            <Link href="?sortOrder=email">Email</Link>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        {sortedUser.map((user) => (
-          <tr key={user.id}>
-            <td>{user.name}</td>
-            <td>{user.email}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <>
+      <h1>Users</h1>
+      <Link href="/users/new" className="btn">
+        New User
+      </Link>
+      <Suspense fallback={<p>Loadding...</p>}>
+        <UserTable sortOrder={sortOrder} />
+      </Suspense>
+    </>
   );
 };
 
-export default UserTable;
+export default UsersPage;

@@ -49,6 +49,11 @@ export default function Home() {
             <h3>Router</h3>
           </Link>
         </li>
+        <li>
+          <Link href="/basic/loadingui/?sortOrder=name">
+            <h3>Loading UI</h3>
+          </Link>
+        </li>
       </ul>
     </div>
   );
