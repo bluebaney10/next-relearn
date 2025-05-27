@@ -73,6 +73,11 @@ export default function Home() {
             <h3>Create Objects</h3>
           </Link>
         </li>
+        <li>
+          <Link href="/apis/updateobject/1">
+            <h3>Update Objects</h3>
+          </Link>
+        </li>
       </ul>
     </div>
   );
