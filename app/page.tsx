@@ -83,6 +83,11 @@ export default function Home() {
             <h3>Delete Objects</h3>
           </Link>
         </li>
+        <li>
+          <Link href="/apis/validationwithzod/users/1">
+            <h3>Validation with zod</h3>
+          </Link>
+        </li>
       </ul>
     </div>
   );
