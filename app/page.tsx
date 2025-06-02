@@ -78,6 +78,11 @@ export default function Home() {
             <h3>Update Objects</h3>
           </Link>
         </li>
+        <li>
+          <Link href="/apis/deleteobject/1">
+            <h3>Delete Objects</h3>
+          </Link>
+        </li>
       </ul>
     </div>
   );

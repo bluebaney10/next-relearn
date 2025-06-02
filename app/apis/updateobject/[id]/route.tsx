@@ -15,16 +15,15 @@ export async function PUT(
     return NextResponse.json({ error: "Name is required" }, { status: 400 });
   }
 
+  //Fetch the user with the given id
+  //if doesn't exist, return 404
+  //update the user
   if (params.id > 10) {
     return NextResponse.json({ error: "User not found" }, { status: 404 });
   }
 
-  return NextResponse.json({ id: 1, name: body.name });
-
-  //Fetch the user with the given id
-  //if doesn't exist, return 404
-  //update the user
   //Return the updated user
+  return NextResponse.json({ id: 1, name: body.name });
 }
 
 /*
