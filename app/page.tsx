@@ -118,6 +118,15 @@ export default function Home() {
           </Link>
         </li>
       </ul>
+
+      <h2>Authentication with NextAuth</h2>
+      <ul>
+        <li>
+          <Link href="/nextauth">
+            <h3>Auth page</h3>
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 }
