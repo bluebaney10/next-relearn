@@ -127,6 +127,15 @@ export default function Home() {
           </Link>
         </li>
       </ul>
+
+      <h2>Optimization</h2>
+      <ul>
+        <li>
+          <Link href="/optimization/image">
+            <h3>Image</h3>
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 }
