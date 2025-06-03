@@ -97,6 +97,16 @@ export default function Home() {
             <h3>Get Collection Objects</h3>
           </Link>
         </li>
+        <li>
+          <Link href="/prisma/getcollectionobject/1">
+            <h3>Get Single Objects</h3>
+          </Link>
+        </li>
+        <li>
+          <Link href="/prisma/creatingobject/">
+            <h3>Create Objects</h3>
+          </Link>
+        </li>
       </ul>
     </div>
   );
