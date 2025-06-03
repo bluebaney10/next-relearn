@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import GoogleAnalyticsScript from "./optimization/thirdpartyscript/GoogleAnalyticsScript";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const roboto = Roboto({
   subsets: ["latin"],
+  weight: ["400", "500"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const poppins = localFont({
+  src: "../public/fonts/poppins-regular-webfont.woff2",
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -27,9 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleAnalyticsScript />
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={poppins.className}>
         <Link href="/">Home</Link>
         {children}
       </body>
