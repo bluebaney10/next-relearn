@@ -89,6 +89,15 @@ export default function Home() {
           </Link>
         </li>
       </ul>
+
+      <h2>Connect DB with Prisma</h2>
+      <ul>
+        <li>
+          <Link href="/prisma/getcollectionobject">
+            <h3>Get Collection Objects</h3>
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 }
