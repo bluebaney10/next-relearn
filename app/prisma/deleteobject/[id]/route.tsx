@@ -1,28 +1,27 @@
 import { NextRequest, NextResponse } from "next/server";
+import prisma from "@/prisma/client";
 
-interface Props {
-  params: { id: number };
-}
-
-export function DELETE(
+export async function DELETE(
   request: NextRequest,
-  { params }: { params: { id: number } }
+  { params }: { params: { id: string } }
 ) {
-  //Fetch user from db
-  //If not found, return 404
-  //Delete the user
-  //Return 200
+  const user = await prisma.user.findUnique({
+    where: { id: parseInt(params.id) },
+  });
 
-  if (params.id > 10) {
+  if (!user) {
     return NextResponse.json({ error: "User not found" }, { status: 404 });
   }
+  await prisma.user.delete({
+    where: { id: user.id },
+  });
 
   return NextResponse.json({});
 }
 
 /*
 input:
-http://localhost:3000/apis/deleteobject/1
+http://localhost:3000/prisma/deleteobject/2
 
 
 output:

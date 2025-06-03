@@ -112,6 +112,11 @@ export default function Home() {
             <h3>Update Objects</h3>
           </Link>
         </li>
+        <li>
+          <Link href="/prisma/deleteobject/2">
+            <h3>Delete Objects</h3>
+          </Link>
+        </li>
       </ul>
     </div>
   );
