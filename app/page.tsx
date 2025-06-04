@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Link from "next/link";
 
 export default function Home() {
@@ -138,4 +139,12 @@ export default function Home() {
       </ul>
     </div>
   );
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const product = await fetch("");
+  return {
+    title: "product.title",
+    description: "product.description",
+  };
 }
