@@ -10,11 +10,14 @@
   },
   "dependencies": {
     "@prisma/client": "^6.8.2",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.49.9",
     "fast-sort": "^3.4.1",
     "next": "15.3.2",
     "next-auth": "^4.24.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.5.2",
     "zod": "^3.25.48"
   },
   "devDependencies": {

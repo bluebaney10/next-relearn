@@ -147,6 +147,20 @@ export default function Home() {
           </Link>
         </li>
       </ul>
+
+      <h2>Supabase</h2>
+      <ul>
+        <li>
+          <Link href="/supabase/login">
+            <h3>Login</h3>
+          </Link>
+        </li>
+        <li>
+          <Link href="/supabase/protected">
+            <h3>Protected</h3>
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 }

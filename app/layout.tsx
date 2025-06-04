@@ -4,6 +4,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import GoogleAnalyticsScript from "./optimization/thirdpartyscript/GoogleAnalyticsScript";
+import { Toaster } from "react-hot-toast";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -35,6 +36,14 @@ export default function RootLayout({
       <body className={poppins.className}>
         <Link href="/">Home</Link>
         {children}
+
+        <Toaster
+          toastOptions={{
+            style: {
+              textAlign: "center",
+            },
+          }}
+        />
       </body>
     </html>
   );
