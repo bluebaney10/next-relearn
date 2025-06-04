@@ -55,6 +55,11 @@ export default function Home() {
             <h3>Loading UI</h3>
           </Link>
         </li>
+        <li>
+          <Link href="/basic/customhook/">
+            <h3>Custom Hook</h3>
+          </Link>
+        </li>
       </ul>
 
       <h2>Building API</h2>
