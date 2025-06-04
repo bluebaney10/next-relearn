@@ -136,15 +136,22 @@ export default function Home() {
             <h3>Image</h3>
           </Link>
         </li>
+        <li>
+          <Link href="/optimization/lazyload">
+            <h3>Lazy Load</h3>
+          </Link>
+        </li>
       </ul>
     </div>
   );
 }
 
+/* 
 export async function generateMetadata(): Promise<Metadata> {
   const product = await fetch("");
   return {
     title: "product.title",
     description: "product.description",
   };
-}
+} 
+*/
