@@ -62,6 +62,20 @@ export default function Home() {
         </li>
       </ul>
 
+      <h2>Hooks</h2>
+      <ul>
+        <li>
+          <Link href="/hooks/useOptimistic/">
+            <h3>useOptimistic</h3>
+          </Link>
+        </li>
+        <li>
+          <Link href="/hooks/useFormStatus/">
+            <h3>useFormStatus</h3>
+          </Link>
+        </li>
+      </ul>
+
       <h2>Building API</h2>
       <ul>
         <li>
